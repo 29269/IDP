@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="contact">
+    <h2>Experiencing a security incident?</h2>
+    <button class="contactKnop">Contact Us Now!</button>
+</div>
+   <div class="overHuyat">
+       <div class="num">
+        <em class="number">01</em>
+        <div class="numColor"></div>
+       </div>
+    
+    <img src="imag.jpg" alt="fgf">
+    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+         sed diam nonumy eirmod tempor invidunt ut labore et dolore 
+         magna aliquyam erat, sed diam </p>
+   </div>
+   <div class="overHuyat2">
+         <div class="num">
+            <em class="number">02</em>
+            <div class="numColor"></div>
+           </div>
+         <img src="imag.jpg" alt="fgf">
+         <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+              sed diam nonumy eirmod tempor invidunt ut labore et dolore 
+              magna aliquyam erat, sed diam </p>
+   </div> 
+   <div class="overHuyat3">
+    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+        sed diam nonumy eirmod tempor invidunt ut labore et dolore 
+        magna aliquyam erat, sed diam </p>
+    <div class="num">
+       <em class="number">03</em>
+       <div class="numColor"></div>
+      </div>
+    <img src="imag.jpg" alt="fgf">
+    
+</div> 
+<div>
+    <h2>Ons Werk</h2>
+</div>
+<div class="onsWerk">
+    <div>
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+            sed diam nonumy eirmod tempor invidunt ut labore et dolore 
+            magna aliquyam erat, sed diam </p>
+            <button >Bekijk Cases</button>
+    </div>
+  <div>
+    <div id="slide">
+        <span class="slide" onclick="currentSlide(1)"></span> 
+        <span class="slide" onclick="currentSlide(2)"></span> 
+        <span class="slide" onclick="currentSlide(3)"></span> 
+        <span class="slide" onclick="currentSlide(4)"></span> 
+      </div>
+  </div>
+<div>
+
+
+
+</div>
+
+</div>
+  <script>
+      var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("slide");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+  </script>  
+</body>
+</html>

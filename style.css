@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+}
+.overHuyat{
+    display: grid;
+    grid-template-columns: 0.1fr 1fr 1fr;
+    grid-gap: 1em;
+    
+}
+.overHuyat2{
+    display: grid;
+    grid-template-columns: 0.1fr 1.1fr .5fr;
+    grid-gap: 1em;
+    margin-top: 5%;
+    margin-left: 18%; 
+}
+.overHuyat3{
+    display: grid;
+    grid-template-columns: .5fr 0.1fr 1.1fr ;
+    grid-gap: 1em;
+    margin-top: 5%;
+    margin-left: 15%; 
+}
+.numColor{
+    width: 80%; 
+    height: 12%;
+    background-color: #EB452E;
+    transform: skew(-25deg) rotate(2deg);
+    margin-top: -25%;
+    margin-left: 295%; 
+    z-index: 2;
+    
+}
+.number{
+    z-index: 3;
+    font-size: 40px;
+    margin-left: 285%;
+    position: relative;
+    background: none;
+}
+img{
+    
+    width: 40%;
+    border: 1px solid black;
+    transform: skew(-20deg) rotate(2deg);
+    margin-left: 25%; 
+    z-index: 1;
+}
+.contactKnop{
+    background-color: #EB452E;
+}
+#contact{
+    text-align: center;
+    padding: 4em;
+}
+#contact button{
+    margin: 3em;
+    padding: 1em;
+    border-radius: 25px;
+}
+#contact button:hover{
+    background-color: black;  
+  color: white;
+  border: 2px solid #EB452E;
+}
+.overHuyat p{
+    margin-top: 10%;
+    margin-right: 50%;
+}
+.overHuyat2 p{
+    margin-top: 10%;
+    margin-right: 5%;
+}
+.overHuyat3 p{
+    margin-top: 10%;
+    margin-right: 5%;
+}
+
+@media screen and (min-width: 370px) and (max-width: 1200px){
+    .overHuyat{
+        display: grid;
+        grid-template-columns: 0.05fr 1.1fr 1fr;
+        grid-gap: 1em;
+        
+    }
+    .overHuyat p{
+        margin-top: -10%;
+      margin-right: 5%;
+    }
+    .overHuyat2{
+        display: grid;
+        grid-template-columns: 0.1fr 1.1fr 1fr;
+        grid-gap: 1em;
+        margin-top: 15%;
+        margin-left: 6%; 
+    }
+    .overHuyat2 p{
+        margin-top: -10%;
+      margin-right: 5%;
+    }
+    .overHuyat3{
+        display: grid;
+        grid-template-columns: 1fr 0.08fr 1.1fr ;
+        grid-gap: 1em;
+        margin-top: 15%;
+        margin-left: 10%; 
+    }
+    .overHuyat3 p{
+        margin-top: -10%;
+      margin-right: 5%;
+    }
+    .numColor{
+        width: 95%; 
+        height: 7%;
+        background-color: #EB452E;
+        transform: skew(-25deg) rotate(2deg);
+        margin-top: -20%;
+        margin-left: 195%; 
+        z-index: 2;
+        
+    }
+    .number{
+        z-index: 1;
+        font-size: 20px;
+        margin-left: 185%;
+        margin-top: 5%;
+       
+    
+    }
+}
+
+.onsWerk{
+    display: grid;
+    grid-template-columns: 1fr 0.2fr 1fr;
+    grid-gap: 2em;
+    padding: 10em;
+}
+.slide {
+    cursor: pointer;
+    height: 7px;
+    width: 7px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    transition: background-color 0.6s ease;
+    margin-bottom: 1em;
+  }
+  #slide{
+      margin-top: .5em;
+      margin-left: 2em ;
+  }
+
+  .active, .slide:hover {
+    background-color: #4e4d4d;
+  }
+  .onsWerk button{
+    text-align: center;
+    margin-top: 3em;
+    padding: 1em;
+    border-radius: 25px; 
+    background-color: #EB452E ;
+  }
+  .onsWerk button:hover{
+    background-color: black;  
+  color: white;
+  border: 2px solid #EB452E;  
+  }
