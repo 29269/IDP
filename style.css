@@ -30,7 +30,7 @@
     width: 80%; 
     height: 12%;
     background-color: #EB452E;
-    transform: skew(-25deg) rotate(2deg);
+    transform: skew(-25deg) ;
     margin-top: -25%;
     margin-left: 295%; 
     z-index: 2;
@@ -43,11 +43,11 @@
     position: relative;
     background: none;
 }
-img{
+.overOns--element img{
     
     width: 40%;
     border: 1px solid black;
-    transform: skew(-20deg) rotate(2deg);
+    transform: skew(-20deg);
     margin-left: 25%; 
     z-index: 1;
 }
@@ -89,7 +89,7 @@ img{
         
     }
     .overHuyat p{
-        margin-top: -10%;
+      margin-top: -10%;
       margin-right: 5%;
     }
     .overHuyat2{
@@ -118,7 +118,7 @@ img{
         width: 95%; 
         height: 7%;
         background-color: #EB452E;
-        transform: skew(-25deg) rotate(2deg);
+        transform: skew(-25deg);
         margin-top: -20%;
         margin-left: 195%; 
         z-index: 2;
@@ -145,7 +145,7 @@ img{
     height: 7px;
     width: 7px;
     margin: 0 2px;
-    background-color: #bbb;
+    background-color: #4e4d4d;
     border-radius: 50%;
     display: flex;
     flex-direction: column;
@@ -153,22 +153,31 @@ img{
     margin-bottom: 1em;
   }
   #slide{
-      margin-top: .5em;
+      margin-top: 7em;
       margin-left: 2em ;
   }
 
   .active, .slide:hover {
-    background-color: #4e4d4d;
+    background-color: white;
+    height: 10px;
+    width: 10px;
   }
   .onsWerk button{
     text-align: center;
-    margin-top: 3em;
+    margin-top: 5em;
     padding: 1em;
     border-radius: 25px; 
     background-color: #EB452E ;
   }
   .onsWerk button:hover{
-    background-color: black;  
+  background-color: black;  
   color: white;
   border: 2px solid #EB452E;  
+  }
+  #onsWerk__titel h2{
+    text-align: center;
+    margin-top: 2em;
+  }
+  .mySlides fade{
+      width: 100%;
   }
