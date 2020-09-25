@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a82e000026.js"></script>
     <title>Document</title>
 </head>
 <body >
@@ -12,51 +13,51 @@
     <h2>Experiencing a security incident?</h2>
     <button class="contactKnop">Contact Us Now!</button>
 </div>
-   <div class="overHuyat">
+   <div class="container--info">
        <div class="num">
-        <em class="number">01</em>
-        <div class="numColor"></div>
+        <em class="num--number">01</em>
+        <div class="num--numColor"></div>
        </div>
     
-    <img src="imag.jpg" alt="fgf">
-    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+    <img class="container--img" src="imag.jpg" alt="fgf">
+    <p class="container--info--text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
          sed diam nonumy eirmod tempor invidunt ut labore et dolore 
          magna aliquyam erat, sed diam </p>
    </div>
-   <div class="overHuyat2">
+   <div class="container--info_schuif">
          <div class="num">
-            <em class="number">02</em>
-            <div class="numColor"></div>
+            <em class="num--number">02</em>
+            <div class="num--numColor"></div>
            </div>
-         <img src="imag.jpg" alt="fgf">
-         <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+         <img class="container--img" src="imag.jpg" alt="fgf">
+         <p class="container--info_schuif--text"> Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
               sed diam nonumy eirmod tempor invidunt ut labore et dolore 
               magna aliquyam erat, sed diam </p>
    </div> 
-   <div class="overHuyat3">
-    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+   <div class="container--info_anderform">
+    <p class="container--info_anderform--text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
         sed diam nonumy eirmod tempor invidunt ut labore et dolore 
         magna aliquyam erat, sed diam </p>
     <div class="num">
-       <em class="number">03</em>
-       <div class="numColor"></div>
+       <em class="num--number">03</em>
+       <div class="num--numColor"></div>
       </div>
-    <img src="imag.jpg" alt="fgf">
+    <img class="container--img" src="imag.jpg" alt="fgf">
     
 </div> 
 </div>
-<div id="onsWerk__titel">
-    <h2>Ons Werk</h2>
-</div>
 <div class="onsWerk">
-    <div>
+    <h2 id="onsWerk__titel">Ons Werk</h2>
+</div>
+<div class="onsWerk--container">
+    <div class="onsWerk--container_text">
         <p>Voor elk los onderdeel kan je bij<br>
           ons terecht. Kies je er<br>
           meerdere? Dan zorgen wij dat<br>
           alle services naadloos op elkaar<br>
           aansluiten. Zie hier een<br>
           overzicht van recent werk </p>
-            <button >Bekijk Cases</button>
+            <button class="onsWerk--container_button" >Bekijk Cases</button>
     </div>
   <div>
     <div id="slide">
@@ -66,21 +67,60 @@
         <span class="slide" onclick="currentSlide(4)"></span> 
       </div>
   </div>
-<div>
-  <div class="mySlides fade">
+<div class="fotos">
+  <div class="small">
+
+    <div class="mySlides fade">
+      <img src="imag.jpg" style="width:100%">
+    </div>
+  
+</div>
+  <div class="big">
     <img src="imag.jpg" style="width:100%">
-  </div>
-  <div class="mySlides fade">
-    <img src="imag1.jpg" style="width:100%">
-  </div>
-  <div class="mySlides fade">
-    <img src="imag.jpg" style="width:100%">
-  </div>
-  <div class="mySlides fade">
-    <img src="imag1.jpg" style="width:100%">
+    <p><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+      sed diam nonumy eirmod tempor invidunt ut labore et dolore 
+      magna aliquyam erat, sed diam </p></p>
   </div>
 
+  <div class="small">
+
+    <div class="mySlides fade">
+      <img src="imag1.jpg" style="width:100%">
+    </div>
+  
 </div>
+  <div class="big">
+    <img src="imag1.jpg" style="width:100%">
+    <p><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+      sed diam nonumy eirmod tempor invidunt ut labore et dolore 
+      magna aliquyam erat, sed diam </p></p>
+  </div>
+  <div class="small">
+
+    <div class="mySlides fade">
+      <img src="imag.jpg" style="width:100%">
+    </div>
+  
+</div>
+  <div class="big">
+    <img src="imag.jpg" style="width:100%">
+    <p><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+      sed diam nonumy eirmod tempor invidunt ut labore et dolore 
+      magna aliquyam erat, sed diam </p></p>
+  </div>
+  <div class="small">
+
+    <div class="mySlides fade">
+      <img src="imag1.jpg" style="width:100%">
+    </div>
+  
+</div>
+  <div class="big">
+    <img src="imag1.jpg" style="width:100%">
+    <p><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+      sed diam nonumy eirmod tempor invidunt ut labore et dolore 
+      magna aliquyam erat, sed diam </p></p>
+  </div>
 
 </div>
   <script>
@@ -110,6 +150,65 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
+
+// lightbox
+
+
+const smalltjes = document.querySelectorAll('.small');
+const bigtjes = document.querySelectorAll('.big');
+
+//de Nodelist bigtjes in array stoppen(div).
+
+const alleBig =[]
+
+for(let i=0; i<bigtjes.length; i++){
+    alleBig.push(bigtjes[i]);
+    bigtjes[i].remove();
+
+    //element uit de DOM verwijderen.
+
+    
+    
+}
+const sluitknop = document.createElement('i');
+sluitknop.className = 'fas fa-times sk';
+sluitknop.addEventListener('click', sluiten);
+
+
+function box(nummer){
+    //modaall element maken
+    let modaall = document.createElement('div');
+    modaall.id = 'modaall';
+    modaall.addEventListener('click', sluiten);
+    let inhoud = document.createElement('div');
+    //modaall inhoud element maken
+    inhoud.className = 'modaallInhoud';
+    inhoud.innerHTML = alleBig[nummer].innerHTML;
+    inhoud.addEventListener('click', function(e){
+    e.stopPropagation();
+    });
+  
+
+    modaall.append(inhoud);
+    inhoud.prepend(sluitknop);
+    document.body.append(modaall);
+
+    // var test = document.createElement('h1');
+    // test.innerHTML = 'MD!A';
+    // document.body.append(test);
+}
+
+// klik gebeurtenis op de small div's
+for (let i=0; i<smalltjes.length; i++){
+    smalltjes[i].addEventListener('click', function() {
+    box(i)
+    
+});
+}
+function sluiten(){
+    document.getElementById('modaall').remove();
+}
   </script>  
+  
 </body>
 </html>
