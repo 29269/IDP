@@ -14,14 +14,14 @@ body{
     
     
 }
-.container_schuif{
+.container--schuif{
     display: grid;
     grid-template-columns: 0.1fr 1.1fr .5fr;
     grid-gap: 1em;
     margin-top: 5%;
     margin-left: 18%; 
 }
-.container_anderform{
+.container--anderform{
     display: grid;
     grid-template-columns: .5fr 0.1fr 1.1fr ;
     grid-gap: 1em;
